@@ -1,0 +1,99 @@
+html,
+body,
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#timeSlider {
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: 20px;
+}
+
+.esri-widget--button {
+  font-size: 14px;
+  background-color: #000000;
+  color: #fffcfc;
+}
+
+.esri-icon-basemap:before {
+  content: "";
+  color: inherit;
+}
+
+.esri-time-slider__layout--wide .esri-time-slider__playback-controls {
+  direction: ltr;
+  display: flex;
+  flex: auto;
+  align-items: center;
+}
+
+.esri-slider__tick-label {
+  color: #030303;
+  position: absolute;
+  width: max-content;
+}
+
+.esri-time-slider__min,
+.esri-time-slider__max {
+  color: #fffcfc;
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 12px;
+  justify-content: center;
+  line-height: 12px;
+}
+
+.esri-time-slider {
+  background-color: #000000;
+  border-radius: 5px;
+  border: 2px solid #aaa;
+}
+
+.esri-time-slider__play-button {
+  font-size: 1.2em;
+  background-color: #000000;
+}
+
+.esri-time-slider__time-text {
+  font-size: 0.9em;
+  color: #ffffff;
+}
+
+.esri-time-slider__time-extent-date {
+  font-size: 12px;
+  line-height: 12px;
+  color: #8dff0a;
+  display: flex;
+}
+
+#titleDiv {
+  padding: 10px;
+  font-weight: 36;
+  text-align: center;
+}
+
+#featureTableDiv {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 100px;
+  width: 400px;
+}
+
+#basemapToggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  /* Adjust the z-index to make sure the button appears on top */
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
